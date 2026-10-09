@@ -1,0 +1,6 @@
+<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<style>body{font-family:sans-serif;background:#020617;color:#fff;padding:20px}input{padding:10px;border-radius:8px;border:0;width:60%}button{padding:10px;border-radius:8px;border:0;background:#22c55e;color:#fff}li{list-style:none;background:#1e293b;margin:6px 0;padding:10px;border-radius:8px}li.done{text-decoration:line-through;opacity:.5}ul{padding:0}</style>
+<h2>Ajanda</h2><input id="i" placeholder="Yeni gorev"><button onclick="add()">Ekle</button><ul id="l"></ul>
+<script>let arr=JSON.parse(localStorage.getItem('aj')||'[]');function draw(){document.getElementById('l').innerHTML=arr.map((a,i)=>'<li class="'+(a.d?'done':'')+'"><input type=checkbox '+(a.d?'checked':'')+' onchange="tg('+i+')"> '+a.t+' <button onclick="rm('+i+')">Sil</button></li>').join('')}
+function add(){const v=document.getElementById('i').value;if(!v)return;arr.push({t:v});localStorage.setItem('aj',JSON.stringify(arr));document.getElementById('i').value='';draw()}
+function tg(i){arr[i].d=!arr[i].d;localStorage.setItem('aj',JSON.stringify(arr));draw()}function rm(i){arr.splice(i,1);localStorage.setItem('aj',JSON.stringify(arr));draw()}draw();</script>

@@ -1,0 +1,13 @@
+{
+  "id": "foto-galeri",
+  "name": "Foto Galeri",
+  "description": "Picsum fotograflari, arama ve tam ekran goruntuleme.",
+  "version": "1.0.0",
+  "author": "Lumen Ekibi",
+  "email": "haslooytr@gmail.com",
+  "icon": "https://raw.githubusercontent.com/SENIN-KULLANICIN/lumenos-apps/main/apps/foto-galeri/icon.svg",
+  "cover": "https://raw.githubusercontent.com/SENIN-KULLANICIN/lumenos-apps/main/apps/foto-galeri/cover.svg",
+  "entryUrl": "https://raw.githack.com/SENIN-KULLANICIN/lumenos-apps/main/apps/foto-galeri/app.html",
+  "category": "Medya",
+  "permissions": []
+}

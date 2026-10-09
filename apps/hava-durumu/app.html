@@ -1,0 +1,10 @@
+<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<style>body{font-family:sans-serif;background:#0f172a;color:#fff;margin:0;padding:20px}input,button{padding:10px;border-radius:8px;border:0}input{width:200px}button{background:#3b82f6;color:#fff;cursor:pointer}#out{margin-top:16px;font-size:20px}</style>
+<h2>Hava Durumu</h2><input id="c" value="Istanbul" placeholder="Sehir"><button onclick="go()">Getir</button><div id="out"></div>
+<script>
+async function go(){const c=document.getElementById('c').value;const g=await(await fetch('https://geocoding-api.open-meteo.com/v1/search?name='+encodeURIComponent(c)+'&count=1&language=tr')).json();
+if(!g.results){out.textContent='Sehir bulunamadi';return}const r=g.results[0];
+const w=await(await fetch('https://api.open-meteo.com/v1/forecast?latitude='+r.latitude+'&longitude='+r.longitude+'&current=temperature_2m,wind_speed_10m,weather_code')).json();
+out.textContent=r.name+': '+w.current.temperature_2m+'C, ruzgar '+w.current.wind_speed_10m+' km/h';}
+go();
+</script>

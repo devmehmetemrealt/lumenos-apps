@@ -1,0 +1,13 @@
+{
+  "id": "doviz-cevirici",
+  "name": "Doviz Cevirici",
+  "description": "USD/EUR/TRY/GBP cevirici, cevrimdisi kurlarla calisir.",
+  "version": "1.0.0",
+  "author": "Lumen Ekibi",
+  "email": "haslooytr@gmail.com",
+  "icon": "https://raw.githubusercontent.com/SENIN-KULLANICIN/lumenos-apps/main/apps/doviz-cevirici/icon.svg",
+  "cover": "https://raw.githubusercontent.com/SENIN-KULLANICIN/lumenos-apps/main/apps/doviz-cevirici/cover.svg",
+  "entryUrl": "https://raw.githack.com/SENIN-KULLANICIN/lumenos-apps/main/apps/doviz-cevirici/app.html",
+  "category": "Araclar",
+  "permissions": []
+}

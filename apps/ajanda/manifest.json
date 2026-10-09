@@ -1,0 +1,13 @@
+{
+  "id": "ajanda",
+  "name": "Ajanda",
+  "description": "Gunluk gorev listesi, tamamla/sil, kalici kayit.",
+  "version": "1.0.0",
+  "author": "Lumen Ekibi",
+  "email": "haslooytr@gmail.com",
+  "icon": "https://raw.githubusercontent.com/SENIN-KULLANICIN/lumenos-apps/main/apps/ajanda/icon.svg",
+  "cover": "https://raw.githubusercontent.com/SENIN-KULLANICIN/lumenos-apps/main/apps/ajanda/cover.svg",
+  "entryUrl": "https://raw.githack.com/SENIN-KULLANICIN/lumenos-apps/main/apps/ajanda/app.html",
+  "category": "Verimlilik",
+  "permissions": []
+}

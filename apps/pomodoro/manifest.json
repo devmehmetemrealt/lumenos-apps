@@ -1,0 +1,13 @@
+{
+  "id": "pomodoro",
+  "name": "Odak Zamanlayici",
+  "description": "25/5 Pomodoro sayaci, zil sesi ve tur takibi.",
+  "version": "1.0.0",
+  "author": "Lumen Ekibi",
+  "email": "haslooytr@gmail.com",
+  "icon": "https://raw.githubusercontent.com/SENIN-KULLANICIN/lumenos-apps/main/apps/pomodoro/icon.svg",
+  "cover": "https://raw.githubusercontent.com/SENIN-KULLANICIN/lumenos-apps/main/apps/pomodoro/cover.svg",
+  "entryUrl": "https://raw.githack.com/SENIN-KULLANICIN/lumenos-apps/main/apps/pomodoro/app.html",
+  "category": "Verimlilik",
+  "permissions": []
+}

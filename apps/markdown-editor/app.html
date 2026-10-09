@@ -1,0 +1,7 @@
+<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<style>body{margin:0;font-family:sans-serif;display:flex;height:100vh}textarea,#p{flex:1;padding:16px;box-sizing:border-box}textarea{border:0;outline:0;font-size:15px}#p{background:#f8fafc;border-left:1px solid #ddd;overflow:auto}</style>
+<textarea id="e" placeholder="# Baslik&#10;**kalin** *italik*"># Lumen Not
+**kalin**, *italik*, `kod`</textarea><div id="p"></div>
+<script>const e=document.getElementById('e'),p=document.getElementById('p');
+function r(){p.innerHTML=e.value.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/^# (.*)/gm,'<h1>$1</h1>').replace(/\*\*(.*?)\*\*/g,'<b>$1</b>').replace(/\*(.*?)\*/g,'<i>$1</i>').replace(/`(.*?)`/g,'<code>$1</code>').replace(/\n/g,'<br>')}
+e.oninput=r;r();</script>

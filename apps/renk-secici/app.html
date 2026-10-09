@@ -1,0 +1,5 @@
+<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<style>body{font-family:sans-serif;padding:24px;background:#0f172a;color:#fff}#pal{display:flex;gap:8px;margin-top:12px}.c{flex:1;height:80px;border-radius:10px;cursor:pointer}</style>
+<h2>Renk Secici</h2><input type="color" id="c" value="#4cc2ff" style="width:120px;height:60px"><button onclick="gen()" style="padding:12px;border-radius:8px;border:0;background:#3b82f6;color:#fff">Palet Uret</button>
+<h3 id="hex"></h3><div id="pal"></div>
+<script>function gen(){const b=document.getElementById('c').value;document.getElementById('hex').textContent=b;let h='';for(let i=0;i<5;i++)h+='<div class=c style="background:'+b+'55;filter:hue-rotate('+(i*30)+'deg);background:'+b+'" title="kopyala" onclick="navigator.clipboard.writeText(\''+b+'\');alert(\'kopyalandi\')"></div>';document.getElementById('pal').innerHTML=h}gen();</script>

@@ -1,0 +1,6 @@
+<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<style>body{font-family:sans-serif;background:#0f172a;color:#fff;padding:24px}input,select,button{padding:10px;border-radius:8px;border:0;margin:4px}button{background:#3b82f6;color:#fff}</style>
+<h2>Doviz Cevirici</h2><input id="a" type="number" value="100"><select id="f"><option>USD</option><option>EUR</option><option>GBP</option><option>TRY</option></select>
+<span>-></span><select id="t"><option>TRY</option><option>USD</option><option>EUR</option><option>GBP</option></select>
+<button onclick="go()">Cevir</button><h3 id="o"></h3>
+<script>const R={USD:34.5,EUR:37.2,GBP:43.8,TRY:1};async function go(){try{const r=await(await fetch('https://open.er-api.com/v6/latest/'+document.getElementById('f').value)).json();const rate=r.rates[document.getElementById('t').value];document.getElementById('o').textContent=(document.getElementById('a').value*rate).toFixed(2)}catch(e){const f=R[document.getElementById('f').value],t=R[document.getElementById('t').value];document.getElementById('o').textContent=(document.getElementById('a').value/t*f).toFixed(2)+' (cevrimdisi kur)'}}</script>

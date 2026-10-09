@@ -1,0 +1,6 @@
+<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<style>body{font-family:sans-serif;background:#111827;color:#fff;padding:20px;text-align:center}input{width:90%;padding:12px;font-size:18px;border-radius:8px;border:0}button{padding:12px;border-radius:8px;border:0;margin:3px;width:70px;background:#1f2937;color:#fff;font-size:15px}button.op{background:#3b82f6}</style>
+<h2>Bilimsel Hesap</h2><input id="e"><div id="k"></div>
+<script>const ks=['sin(','cos(','tan(','log(','sqrt(','PI','E','^','(',')','7','8','9','/','4','5','6','*','1','2','3','-','0','.','%','+','C','='];
+const d=document.getElementById('k');ks.forEach(k=>{const b=document.createElement('button');b.textContent=k;if('/*-+='.includes(k))b.className='op';b.onclick=()=>press(k);d.appendChild(b)});
+function press(k){const e=document.getElementById('e');if(k=='C')e.value='';else if(k=='='){try{let s=e.value.replace(/\^/g,'**').replace(/sqrt/g,'Math.sqrt').replace(/log/g,'Math.log10').replace(/sin/g,'Math.sin').replace(/cos/g,'Math.cos').replace(/tan/g,'Math.tan').replace(/PI/g,'Math.PI').replace(/E/g,'Math.E');e.value=eval(s)}catch{ e.value='Hata'}}else e.value+=k}</script>

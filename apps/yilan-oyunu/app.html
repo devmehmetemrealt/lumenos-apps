@@ -1,0 +1,7 @@
+<!doctype html><meta charset="utf-8"><style>body{background:#020617;color:#fff;font-family:sans-serif;text-align:center}canvas{background:#0f172a;border-radius:10px}</style>
+<h2>Yilan Oyunu (skor: <span id="s">0</span>)</h2><canvas id="c" width="400" height="400"></canvas><p>Ok tuslari / WASD</p>
+<script>const c=document.getElementById('c'),x=c.getContext('2d');let sn=[{x:5,y:5}],d={x:1,y:0},f={x:10,y:10},sc=0;
+document.onkeydown=e=>{if(e.key=='ArrowUp'||e.key=='w')d={x:0,y:-1};if(e.key=='ArrowDown'||e.key=='s')d={x:0,y:1};if(e.key=='ArrowLeft'||e.key=='a')d={x:-1,y:0};if(e.key=='ArrowRight'||e.key=='d')d={x:1,y:0}};
+setInterval(()=>{const h={x:sn[0].x+d.x,y:sn[0].y+d.y};if(h.x<0||h.y<0||h.x>=20||h.y>=20||sn.some(s=>s.x==h.x&&s.y==h.y)){sn=[{x:5,y:5}];sc=0}sn.unshift(h);
+if(h.x==f.x&&h.y==f.y){sc++;f={x:Math.floor(Math.random()*20),y:Math.floor(Math.random()*20)}}else sn.pop();
+document.getElementById('s').textContent=sc;x.clearRect(0,0,400,400);x.fillStyle='#22c55e';sn.forEach(s=>x.fillRect(s.x*20,s.y*20,18,18));x.fillStyle='#ef4444';x.fillRect(f.x*20,f.y*20,18,18)},150);</script>

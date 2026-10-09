@@ -1,0 +1,13 @@
+{
+  "id": "bilimsel-hesap",
+  "name": "Bilimsel Hesap",
+  "description": "sin/cos/log/kok/us destekli hesap makinesi.",
+  "version": "1.0.0",
+  "author": "Lumen Ekibi",
+  "email": "haslooytr@gmail.com",
+  "icon": "https://raw.githubusercontent.com/SENIN-KULLANICIN/lumenos-apps/main/apps/bilimsel-hesap/icon.svg",
+  "cover": "https://raw.githubusercontent.com/SENIN-KULLANICIN/lumenos-apps/main/apps/bilimsel-hesap/cover.svg",
+  "entryUrl": "https://raw.githack.com/SENIN-KULLANICIN/lumenos-apps/main/apps/bilimsel-hesap/app.html",
+  "category": "Araclar",
+  "permissions": []
+}

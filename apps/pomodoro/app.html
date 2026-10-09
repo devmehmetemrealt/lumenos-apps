@@ -1,0 +1,6 @@
+<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<style>body{font-family:sans-serif;background:#111827;color:#fff;text-align:center;padding:40px}#t{font-size:72px;margin:20px}button{padding:12px 20px;border-radius:10px;border:0;background:#22c55e;color:#fff;font-size:16px;margin:4px;cursor:pointer}</style>
+<h2>Odak Zamanlayici</h2><div id="t">25:00</div>
+<button onclick="start()">Baslat</button><button onclick="reset()">Sifirla</button><div id="tur"></div>
+<script>let s=25*60,t=null,tur=1;function tick(){s--;if(s<0){alert('Tur bitti!');tur++;document.getElementById('tur').textContent='Tur: '+tur;s=25*60}const m=String(Math.floor(s/60)).padStart(2,'0'),x=String(s%60).padStart(2,'0');document.getElementById('t').textContent=m+':'+x}
+function start(){if(t)return;t=setInterval(tick,1000)}function reset(){clearInterval(t);t=null;s=25*60;document.getElementById('t').textContent='25:00'}</script>

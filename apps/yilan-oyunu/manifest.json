@@ -1,0 +1,13 @@
+{
+  "id": "yilan-oyunu",
+  "name": "Yilan Oyunu",
+  "description": "Klasik snake: ok tuslari/WASD ile oynayin, skor takibi.",
+  "version": "1.0.1",
+  "author": "Lumen Ekibi",
+  "email": "haslooytr@gmail.com",
+  "icon": "https://raw.githubusercontent.com/SENIN-KULLANICIN/lumenos-apps/main/apps/yilan-oyunu/icon.svg",
+  "cover": "https://raw.githubusercontent.com/SENIN-KULLANICIN/lumenos-apps/main/apps/yilan-oyunu/cover.svg",
+  "entryUrl": "https://raw.githack.com/SENIN-KULLANICIN/lumenos-apps/main/apps/yilan-oyunu/app.html",
+  "category": "Oyun",
+  "permissions": []
+}
