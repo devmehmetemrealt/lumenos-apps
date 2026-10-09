@@ -5,9 +5,9 @@
   "version": "1.0.0",
   "author": "Lumen Ekibi",
   "email": "haslooytr@gmail.com",
-  "icon": "https://raw.githubusercontent.com/SENIN-KULLANICIN/lumenos-apps/main/apps/renk-secici/icon.svg",
-  "cover": "https://raw.githubusercontent.com/SENIN-KULLANICIN/lumenos-apps/main/apps/renk-secici/cover.svg",
-  "entryUrl": "https://raw.githack.com/SENIN-KULLANICIN/lumenos-apps/main/apps/renk-secici/app.html",
+  "icon": "https://raw.githubusercontent.com/devmehmetemrealt/lumenos-apps/refs/heads/master/apps/renk-secici/icon.svg",
+  "cover": "https://raw.githubusercontent.com/devmehmetemrealt/lumenos-apps/refs/heads/master/apps/renk-secici/cover.svg",
+  "entryUrl": "https://raw.githubusercontent.com/devmehmetemrealt/lumenos-apps/refs/heads/master/apps/renk-secici/app.html",
   "category": "Tasarim",
   "permissions": []
 }
