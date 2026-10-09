@@ -5,9 +5,9 @@
   "version": "1.0.0",
   "author": "Lumen Ekibi",
   "email": "haslooytr@gmail.com",
-  "icon": "https://raw.githubusercontent.com/devmehmetemrealt/lumenos-apps/refs/heads/master/apps/doviz-cevirici/icon.svg",
-  "cover": "https://raw.githubusercontent.com/devmehmetemrealt/lumenos-apps/refs/heads/master/apps/doviz-cevirici/cover.svg",
-  "entryUrl": "https://raw.githubusercontent.com/devmehmetemrealt/lumenos-apps/refs/heads/master/apps/doviz-cevirici/app.html",
+  "icon": "https://cdn.jsdelivr.net/gh/devmehmetemrealt/lumenos-apps@master/apps/doviz-cevirici/icon.svg",
+  "cover": "https://cdn.jsdelivr.net/gh/devmehmetemrealt/lumenos-apps@master/apps/doviz-cevirici/cover.svg",
+  "entryUrl": "https://cdn.jsdelivr.net/gh/devmehmetemrealt/lumenos-apps@master/apps/doviz-cevirici/app.html",
   "category": "Araclar",
   "permissions": []
 }
